@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+<h1> You're Signed IN!!! </h1>
+<% else %>
+<% end %>
+<div class="center hero-unit">
+    <h1>Welcome to my App!!</h1>
+
+    <h2>
+      Here is the home page for the
+      <a href="http://omrails.com/">One Month Rails</a>
+      class I am creating this app for.
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
